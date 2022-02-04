@@ -1,0 +1,48 @@
+html, body {
+    background-color: #1F2937;
+    margin: 0;
+}
+header {
+    padding: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.subtitle {
+    color: lightcoral;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.container {
+    --square-dimension: 16;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--square-dimension), 40px [col-start]);
+    grid-template-rows: repeat(var(--square-dimension), 40px [row-start]);
+    justify-content: center;
+    align-content: center;
+}
+
+.square {
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+}
+.button-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button {
+    padding: 10px;
+    color: white;
+    background-color: #1F2937;
+    border: white solid 2px;
+}
+.pressed {
+    background-color: indianred;
+}
